@@ -26,6 +26,7 @@ def route_calculator (world_map, city_names, start):
     optimal_route.append (city_names[start])
     
     return optimal_route
+#(Singh et al, 2022)
 
 start = 0
 city_names = []
@@ -44,5 +45,3 @@ for times in range (number_of_cities):
     world_map.append(one_city_distances)
 
 print("Your optimal route is:", route_calculator (world_map, city_names, start))
-
-#(Singh et al, 2022)
