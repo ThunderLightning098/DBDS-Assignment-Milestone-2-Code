@@ -65,3 +65,19 @@ for times in range (number_of_cities):
     world_map.append(one_city_distances)
 
 print("Your optimal route is:", route_calculator (world_map, city_names, start))
+
+#Test data:
+
+#Inputs:
+#City names (in order): "A", "B", "C", "D"
+#All distance (in order): 0, 10, 15, 20, 10, 0, 35, 25, 15, 35, 0, 30, 20, 25, 30, 0
+
+#After entering, program inputs should look like this:
+#city_names = ["A", "B", "C", "D"]
+#world_map = [[0, 10, 15, 20],
+#             [10, 0, 35, 25],
+#             [15, 35, 0, 30],
+#             [20, 25, 30, 0]]
+
+#Outputs:
+#Optimal route: ["A", "B", "D", "C", "A"]
